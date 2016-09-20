@@ -1,0 +1,30 @@
+Install cassandra using brew. See below link for more details:
+https://gist.github.com/virajkulkarni14/1f79175ddbb2a0595118be8a9431f4bd
+
+to start cassandra :
+launchctl start homebrew.mxcl.cassandra
+
+to stop cassandra:
+launchctl stop homebrew.mxcl.cassandra
+
+once you have cassandra cluster up and running, you can connect with it using a cql client:
+cqlsh localhost —cqlversion="3.4.2"
+
+in the above command specifying version of cql is necessary as otherwise it gives compatibility issues with lower versions.
+
+Refer to Sdriver.scala for basic crud operations.
+
+For Bulkloading, it is necessary to create table with appropriate schema for the column family in advance before attempting to bulkload.
+
+Refer to Bulkload.scala for the bulkloading details.
+Note: BulkLoading to cassancdra involves two steps:
+1. Creation of ssTable files. refer to BulkLoad.scala ... This code creates the data(sstable) files at a 
+location specified by user
+2. Once the data files are ready , now we need to register them with cassandra cluster so that they can be 
+loaded as cassandra tables. For this cassandra's sstableloader utility is used:
+
+/usr/local/Cellar/cassandra/3.7/bin/sstableloader -d 127.0.0.1 /trn/eclipse_workspace/scala-cassandra-connect/ruf/simplex/historical_prices
+
+Note: the above data files directory should have the absolute path else it will throw a null pointer exception. this is a bug in cassandra 3.1 onwards i think.
+
+
