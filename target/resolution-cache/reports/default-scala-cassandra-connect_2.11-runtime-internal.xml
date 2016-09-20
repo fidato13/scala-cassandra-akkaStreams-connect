@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="scala-cassandra-connect_2.11"
+		revision="1.0"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20160920152136"/>
+	<dependencies>
+		<module organisation="org.apache.cassandra" name="cassandra-all">
+			<revision name="2.1.12" status="release" pubdate="20151202170524" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cassandra.apache.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="22">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="15735" time="0" location="/Users/tarun/.ivy2/cache/org.apache.cassandra/cassandra-all/ivy-2.1.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/cassandra/cassandra-all/2.1.12/cassandra-all-2.1.12.pom"/>
+				<caller organisation="default" name="scala-cassandra-connect_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.1.12" rev-constraint-default="2.1.12" rev-constraint-dynamic="2.1.12" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="cassandra-all" type="jar" ext="jar" status="no" details="" size="4338282" time="0" location="/Users/tarun/.ivy2/cache/org.apache.cassandra/cassandra-all/jars/cassandra-all-2.1.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/cassandra/cassandra-all/2.1.12/cassandra-all-2.1.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-all">
+			<revision name="4.0.23.Final" status="release" pubdate="20140815200640" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="14108" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-all/ivy-4.0.23.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="4.0.23.Final" rev-constraint-default="4.0.23.Final" rev-constraint-dynamic="4.0.23.Final" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="netty-all" type="jar" ext="jar" status="no" details="" size="1779991" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.23.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.jbellis" name="jamm">
+			<revision name="0.3.0" status="release" pubdate="20141119142309" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jbellis/jamm/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3216" time="0" location="/Users/tarun/.ivy2/cache/com.github.jbellis/jamm/ivy-0.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/jbellis/jamm/0.3.0/jamm-0.3.0.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="jamm" type="jar" ext="jar" status="no" details="" size="21033" time="0" location="/Users/tarun/.ivy2/cache/com.github.jbellis/jamm/jars/jamm-0.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/jbellis/jamm/0.3.0/jamm-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.java.dev.jna" name="jna">
+			<revision name="4.0.0" status="release" pubdate="20130704182535" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+				<license name="LGPL, version 2.1" url="http://www.gnu.org/licenses/licenses.html"/>
+				<license name="ASL, version 2" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="2534" time="0" location="/Users/tarun/.ivy2/cache/net.java.dev.jna/jna/ivy-4.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.0.0/jna-4.0.0.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="4.0.0" rev-constraint-default="4.0.0" rev-constraint-dynamic="4.0.0" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="jna" type="jar" ext="jar" status="no" details="" size="914639" time="0" location="/Users/tarun/.ivy2/cache/net.java.dev.jna/jna/jars/jna-4.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.0.0/jna-4.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.cassandra" name="cassandra-thrift">
+			<revision name="2.1.12" status="release" pubdate="20151202170348" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cassandra.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10463" time="0" location="/Users/tarun/.ivy2/cache/org.apache.cassandra/cassandra-thrift/ivy-2.1.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/cassandra/cassandra-thrift/2.1.12/cassandra-thrift-2.1.12.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="2.1.12" rev-constraint-default="2.1.12" rev-constraint-dynamic="2.1.12" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="cassandra-thrift" type="jar" ext="jar" status="no" details="" size="1901606" time="0" location="/Users/tarun/.ivy2/cache/org.apache.cassandra/cassandra-thrift/jars/cassandra-thrift-2.1.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/cassandra/cassandra-thrift/2.1.12/cassandra-thrift-2.1.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.thrift" name="libthrift">
+			<revision name="0.9.2" status="release" pubdate="20141118191911" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://thrift.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3180" time="0" location="/Users/tarun/.ivy2/cache/org.apache.thrift/libthrift/ivy-0.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/thrift/libthrift/0.9.2/libthrift-0.9.2.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="0.9.2" rev-constraint-default="0.9.2" rev-constraint-dynamic="0.9.2" callerrev="2.1.12"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-thrift" conf="compile, runtime" rev="0.9.2" rev-constraint-default="0.9.2" rev-constraint-dynamic="0.9.2" callerrev="2.1.12"/>
+				<caller organisation="com.thinkaurelius.thrift" name="thrift-server" conf="compile, runtime" rev="0.9.1" rev-constraint-default="0.9.1" rev-constraint-dynamic="0.9.1" callerrev="0.3.7"/>
+				<artifacts>
+					<artifact name="libthrift" type="jar" ext="jar" status="no" details="" size="227712" time="0" location="/Users/tarun/.ivy2/cache/org.apache.thrift/libthrift/jars/libthrift-0.9.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/thrift/libthrift/0.9.2/libthrift-0.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="0.9.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="0.9.2"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="0.9.2" rev-constraint-default="0.9.2" rev-constraint-dynamic="0.9.2" callerrev="2.1.12"/>
+				<caller organisation="com.thinkaurelius.thrift" name="thrift-server" conf="compile, runtime" rev="0.9.1" rev-constraint-default="0.9.1" rev-constraint-dynamic="0.9.1" callerrev="0.3.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.2.5" status="release" pubdate="20130419182959" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="Apache License" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="8539" time="0" location="/Users/tarun/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.pom"/>
+				<caller organisation="org.apache.thrift" name="libthrift" conf="compile, runtime" rev="4.2.5" rev-constraint-default="4.2.5" rev-constraint-dynamic="4.2.5" callerrev="0.9.2"/>
+				<artifacts>
+					<artifact name="httpclient" type="jar" ext="jar" status="no" details="" size="433368" time="0" location="/Users/tarun/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.2.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.1" status="release" pubdate="20071126212410" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<metadata-artifact status="no" details="" size="3971" time="0" location="/Users/tarun/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="4.2.5"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="60686" time="0" location="/Users/tarun/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.2.4" status="release" pubdate="20130320171221" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="Apache License" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="6556" time="0" location="/Users/tarun/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.2.4" rev-constraint-default="4.2.4" rev-constraint-dynamic="4.2.4" callerrev="4.2.5"/>
+				<caller organisation="org.apache.thrift" name="libthrift" conf="compile, runtime" rev="4.2.4" rev-constraint-default="4.2.4" rev-constraint-dynamic="4.2.4" callerrev="0.9.2"/>
+				<artifacts>
+					<artifact name="httpcore" type="jar" ext="jar" status="no" details="" size="227275" time="0" location="/Users/tarun/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.1.2" status="release" pubdate="20140402214238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10622" time="0" location="/Users/tarun/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="270750" time="0" location="/Users/tarun/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.1.2" status="release" pubdate="20140402214047" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="8410" time="0" location="/Users/tarun/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="2.1.12"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="1.1.2"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="427729" time="0" location="/Users/tarun/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.supercsv" name="super-csv">
+			<revision name="2.1.0" status="release" pubdate="20130424063654" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="55">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="5496" time="0" location="/Users/tarun/.ivy2/cache/net.sf.supercsv/super-csv/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/supercsv/super-csv/2.1.0/super-csv-2.1.0.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="2.1.12"/>
+				<caller organisation="default" name="scala-cassandra-connect_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="super-csv" type="jar" ext="jar" status="no" details="" size="91473" time="0" location="/Users/tarun/.ivy2/cache/net.sf.supercsv/super-csv/jars/super-csv-2.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/supercsv/super-csv/2.1.0/super-csv-2.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.clearspring.analytics" name="stream">
+			<revision name="2.5.2" status="release" pubdate="20140118182820" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/clearspring/stream-lib" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4057" time="0" location="/Users/tarun/.ivy2/cache/com.clearspring.analytics/stream/ivy-2.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/clearspring/analytics/stream/2.5.2/stream-2.5.2.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="stream" type="jar" ext="jar" status="no" details="" size="152489" time="0" location="/Users/tarun/.ivy2/cache/com.clearspring.analytics/stream/jars/stream-2.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/clearspring/analytics/stream/2.5.2/stream-2.5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="it.unimi.dsi" name="fastutil">
+			<revision name="6.5.7" status="release" pubdate="20130803094102" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://fasutil.di.unimi.it/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2746" time="0" location="/Users/tarun/.ivy2/cache/it.unimi.dsi/fastutil/ivy-6.5.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/it/unimi/dsi/fastutil/6.5.7/fastutil-6.5.7.pom"/>
+				<caller organisation="com.clearspring.analytics" name="stream" conf="compile, runtime" rev="6.5.7" rev-constraint-default="6.5.7" rev-constraint-dynamic="6.5.7" callerrev="2.5.2"/>
+				<artifacts>
+					<artifact name="fastutil" type="jar" ext="jar" status="no" details="" size="16903573" time="0" location="/Users/tarun/.ivy2/cache/it.unimi.dsi/fastutil/jars/fastutil-6.5.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/it/unimi/dsi/fastutil/6.5.7/fastutil-6.5.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thinkaurelius.thrift" name="thrift-server">
+			<revision name="0.3.7" status="release" pubdate="20140905205908" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/xedin/disruptor_thrift_server" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<license name="Apache 2" url="http://www.opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="4305" time="0" location="/Users/tarun/.ivy2/cache/com.thinkaurelius.thrift/thrift-server/ivy-0.3.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thinkaurelius/thrift/thrift-server/0.3.7/thrift-server-0.3.7.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="0.3.7" rev-constraint-default="0.3.7" rev-constraint-dynamic="0.3.7" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="thrift-server" type="jar" ext="jar" status="no" details="" size="39988" time="0" location="/Users/tarun/.ivy2/cache/com.thinkaurelius.thrift/thrift-server/jars/thrift-server-0.3.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thinkaurelius/thrift/thrift-server/0.3.7/thrift-server-0.3.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.8.1" status="release" pubdate="20100225132158" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="no" details="" size="2583" time="0" location="/Users/tarun/.ivy2/cache/junit/junit/ivy-4.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.pom"/>
+				<caller organisation="com.thinkaurelius.thrift" name="thrift-server" conf="compile, runtime" rev="4.8.1" rev-constraint-default="4.8.1" rev-constraint-dynamic="4.8.1" callerrev="0.3.7"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="237047" time="0" location="/Users/tarun/.ivy2/cache/junit/junit/jars/junit-4.8.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lmax" name="disruptor">
+			<revision name="3.0.1" status="release" pubdate="20130416034145" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://lmax-exchange.github.com/disruptor" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2902" time="0" location="/Users/tarun/.ivy2/cache/com.lmax/disruptor/ivy-3.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lmax/disruptor/3.0.1/disruptor-3.0.1.pom"/>
+				<caller organisation="com.thinkaurelius.thrift" name="thrift-server" conf="compile, runtime" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="0.3.7"/>
+				<artifacts>
+					<artifact name="disruptor" type="jar" ext="jar" status="no" details="" size="66842" time="0" location="/Users/tarun/.ivy2/cache/com.lmax/disruptor/jars/disruptor-3.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lmax/disruptor/3.0.1/disruptor-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.addthis.metrics" name="reporter-config">
+			<revision name="2.1.0" status="release" pubdate="20130928205112" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/addthis/metrics-reporter-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4645" time="0" location="/Users/tarun/.ivy2/cache/com.addthis.metrics/reporter-config/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/addthis/metrics/reporter-config/2.1.0/reporter-config-2.1.0.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="reporter-config" type="jar" ext="jar" status="no" details="" size="22291" time="0" location="/Users/tarun/.ivy2/cache/com.addthis.metrics/reporter-config/jars/reporter-config-2.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/addthis/metrics/reporter-config/2.1.0/reporter-config-2.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hibernate" name="hibernate-validator">
+			<revision name="4.3.0.Final" status="release" pubdate="20120509124612" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7021" time="0" location="/Users/tarun/.ivy2/cache/org.hibernate/hibernate-validator/ivy-4.3.0.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/4.3.0.Final/hibernate-validator-4.3.0.Final.pom"/>
+				<caller organisation="com.addthis.metrics" name="reporter-config" conf="compile, runtime" rev="4.3.0.Final" rev-constraint-default="4.3.0.Final" rev-constraint-dynamic="4.3.0.Final" callerrev="2.1.0"/>
+				<artifacts>
+					<artifact name="hibernate-validator" type="jar" ext="jar" status="no" details="" size="476575" time="0" location="/Users/tarun/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-4.3.0.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/4.3.0.Final/hibernate-validator-4.3.0.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.logging" name="jboss-logging">
+			<revision name="3.1.0.CR2" status="release" pubdate="20111123045344" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jboss.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="GNU Lesser General Public License, version 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.txt"/>
+				<metadata-artifact status="no" details="" size="7499" time="0" location="/Users/tarun/.ivy2/cache/org.jboss.logging/jboss-logging/ivy-3.1.0.CR2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.1.0.CR2/jboss-logging-3.1.0.CR2.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-validator" conf="compile, runtime" rev="3.1.0.CR2" rev-constraint-default="3.1.0.CR2" rev-constraint-dynamic="3.1.0.CR2" callerrev="4.3.0.Final"/>
+				<artifacts>
+					<artifact name="jboss-logging" type="jar" ext="jar" status="no" details="" size="60539" time="0" location="/Users/tarun/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.1.0.CR2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.1.0.CR2/jboss-logging-3.1.0.CR2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.validation" name="validation-api">
+			<revision name="1.0.0.GA" status="release" pubdate="20100225064311" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="Apache License, Version 2.0" url="license.txt"/>
+				<metadata-artifact status="no" details="" size="2449" time="0" location="/Users/tarun/.ivy2/cache/javax.validation/validation-api/ivy-1.0.0.GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-validator" conf="compile, runtime" rev="1.0.0.GA" rev-constraint-default="1.0.0.GA" rev-constraint-dynamic="1.0.0.GA" callerrev="4.3.0.Final"/>
+				<artifacts>
+					<artifact name="validation-api" type="jar" ext="jar" status="no" details="" size="47433" time="0" location="/Users/tarun/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.0.0.GA.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.yammer.metrics" name="metrics-core">
+			<revision name="2.2.0" status="release" pubdate="20121126211109" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4308" time="0" location="/Users/tarun/.ivy2/cache/com.yammer.metrics/metrics-core/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.1.12"/>
+				<caller organisation="com.addthis.metrics" name="reporter-config" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.1.0"/>
+				<artifacts>
+					<artifact name="metrics-core" type="jar" ext="jar" status="no" details="" size="82123" time="0" location="/Users/tarun/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mindrot" name="jbcrypt">
+			<revision name="0.3m" status="release" pubdate="20100517044639" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.mindrot.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="ISC/BSD License"/>
+				<metadata-artifact status="no" details="" size="2954" time="0" location="/Users/tarun/.ivy2/cache/org.mindrot/jbcrypt/ivy-0.3m.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="0.3m" rev-constraint-default="0.3m" rev-constraint-dynamic="0.3m" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="jbcrypt" type="jar" ext="jar" status="no" details="" size="17750" time="0" location="/Users/tarun/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.yaml" name="snakeyaml">
+			<revision name="1.11" status="release" pubdate="20120930111818" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="Apache License Version 2.0" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3558" time="0" location="/Users/tarun/.ivy2/cache/org.yaml/snakeyaml/ivy-1.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.11/snakeyaml-1.11.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.11" rev-constraint-default="1.11" rev-constraint-dynamic="1.11" callerrev="2.1.12"/>
+				<caller organisation="com.addthis.metrics" name="reporter-config" conf="compile, runtime" rev="1.12" rev-constraint-default="1.12" rev-constraint-dynamic="1.12" callerrev="2.1.0"/>
+				<artifacts>
+					<artifact name="snakeyaml" type="bundle" ext="jar" status="no" details="" size="270553" time="0" location="/Users/tarun/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.11/snakeyaml-1.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.12" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.11"/>
+				<caller organisation="com.addthis.metrics" name="reporter-config" conf="compile, runtime" rev="1.12" rev-constraint-default="1.12" rev-constraint-dynamic="1.12" callerrev="2.1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.boundary" name="high-scale-lib">
+			<revision name="1.0.6" status="release" pubdate="20140513232931" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/boundary/high-scale-lib" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3498" time="0" location="/Users/tarun/.ivy2/cache/com.boundary/high-scale-lib/ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/boundary/high-scale-lib/1.0.6/high-scale-lib-1.0.6.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="high-scale-lib" type="jar" ext="jar" status="no" details="" size="105118" time="0" location="/Users/tarun/.ivy2/cache/com.boundary/high-scale-lib/jars/high-scale-lib-1.0.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/boundary/high-scale-lib/1.0.6/high-scale-lib-1.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.json-simple" name="json-simple">
+			<revision name="1.1" status="release" pubdate="20090812180513" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/json-simple/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2533" time="0" location="/Users/tarun/.ivy2/cache/com.googlecode.json-simple/json-simple/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="json-simple" type="jar" ext="jar" status="no" details="" size="16046" time="0" location="/Users/tarun/.ivy2/cache/com.googlecode.json-simple/json-simple/jars/json-simple-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jline" name="jline">
+			<revision name="1.0" status="release" pubdate="20111028035303" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jline.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3598" time="0" location="/Users/tarun/.ivy2/cache/jline/jline/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/jline/jline/1.0/jline-1.0.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="jline" type="jar" ext="jar" status="no" details="" size="91225" time="0" location="/Users/tarun/.ivy2/cache/jline/jline/jars/jline-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/jline/jline/1.0/jline-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-mapper-asl">
+			<revision name="1.9.2" status="release" pubdate="20111105034026" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2785" time="0" location="/Users/tarun/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/ivy-1.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.2/jackson-mapper-asl-1.9.2.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.9.2" rev-constraint-default="1.9.2" rev-constraint-dynamic="1.9.2" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="jackson-mapper-asl" type="jar" ext="jar" status="no" details="" size="765648" time="0" location="/Users/tarun/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.2/jackson-mapper-asl-1.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-core-asl">
+			<revision name="1.9.2" status="release" pubdate="20111105034012" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2563" time="0" location="/Users/tarun/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/ivy-1.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.2/jackson-core-asl-1.9.2.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.9.2" rev-constraint-default="1.9.2" rev-constraint-dynamic="1.9.2" callerrev="2.1.12"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile, runtime" rev="1.9.2" rev-constraint-default="1.9.2" rev-constraint-dynamic="1.9.2" callerrev="1.9.2"/>
+				<artifacts>
+					<artifact name="jackson-core-asl" type="jar" ext="jar" status="no" details="" size="228286" time="0" location="/Users/tarun/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.2/jackson-core-asl-1.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.antlr" name="antlr">
+			<revision name="3.5.2" status="release" pubdate="20140325130441" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="BSD licence" url="http://antlr.org/license.html"/>
+				<metadata-artifact status="no" details="" size="5737" time="0" location="/Users/tarun/.ivy2/cache/org.antlr/antlr/ivy-3.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr/3.5.2/antlr-3.5.2.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="3.5.2" rev-constraint-default="3.5.2" rev-constraint-dynamic="3.5.2" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="antlr" type="jar" ext="jar" status="no" details="" size="1153819" time="0" location="/Users/tarun/.ivy2/cache/org.antlr/antlr/jars/antlr-3.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/antlr/antlr/3.5.2/antlr-3.5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.antlr" name="ST4">
+			<revision name="4.0.8" status="release" pubdate="20140325125835" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.stringtemplate.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="BSD licence" url="http://antlr.org/license.html"/>
+				<metadata-artifact status="no" details="" size="4871" time="0" location="/Users/tarun/.ivy2/cache/org.antlr/ST4/ivy-4.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/ST4/4.0.8/ST4-4.0.8.pom"/>
+				<caller organisation="org.antlr" name="antlr" conf="compile, runtime" rev="4.0.8" rev-constraint-default="4.0.8" rev-constraint-dynamic="4.0.8" callerrev="3.5.2"/>
+				<artifacts>
+					<artifact name="ST4" type="jar" ext="jar" status="no" details="" size="239543" time="0" location="/Users/tarun/.ivy2/cache/org.antlr/ST4/jars/ST4-4.0.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/antlr/ST4/4.0.8/ST4-4.0.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.antlr" name="antlr-runtime">
+			<revision name="3.5.2" status="release" pubdate="20140325130356" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="BSD licence" url="http://antlr.org/license.html"/>
+				<metadata-artifact status="no" details="" size="5591" time="0" location="/Users/tarun/.ivy2/cache/org.antlr/antlr-runtime/ivy-3.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="3.5.2" rev-constraint-default="3.5.2" rev-constraint-dynamic="3.5.2" callerrev="2.1.12"/>
+				<caller organisation="org.antlr" name="antlr" conf="compile, runtime" rev="3.5.2" rev-constraint-default="3.5.2" rev-constraint-dynamic="3.5.2" callerrev="3.5.2"/>
+				<caller organisation="org.antlr" name="ST4" conf="compile, runtime" rev="3.5.2" rev-constraint-default="3.5.2" rev-constraint-dynamic="3.5.2" callerrev="4.0.8"/>
+				<artifacts>
+					<artifact name="antlr-runtime" type="jar" ext="jar" status="no" details="" size="167761" time="0" location="/Users/tarun/.ivy2/cache/org.antlr/antlr-runtime/jars/antlr-runtime-3.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.concurrentlinkedhashmap" name="concurrentlinkedhashmap-lru">
+			<revision name="1.3" status="release" pubdate="20120509043148" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/concurrentlinkedhashmap" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4954" time="0" location="/Users/tarun/.ivy2/cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.3/concurrentlinkedhashmap-lru-1.3.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="concurrentlinkedhashmap-lru" type="jar" ext="jar" status="no" details="" size="54345" time="0" location="/Users/tarun/.ivy2/cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.3/concurrentlinkedhashmap-lru-1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-math3">
+			<revision name="3.2" status="release" pubdate="20130402213128" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9676" time="0" location="/Users/tarun/.ivy2/cache/org.apache.commons/commons-math3/ivy-3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.2/commons-math3-3.2.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="3.2" rev-constraint-default="3.2" rev-constraint-dynamic="3.2" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="commons-math3" type="jar" ext="jar" status="no" details="" size="1692782" time="0" location="/Users/tarun/.ivy2/cache/org.apache.commons/commons-math3/jars/commons-math3-3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.1" status="release" pubdate="20111115082705" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8033" time="0" location="/Users/tarun/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="2.1.12"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-thrift" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="jar" ext="jar" status="no" details="" size="315805" time="0" location="/Users/tarun/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.2" status="release" pubdate="20051124062017" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<metadata-artifact status="no" details="" size="2663" time="0" location="/Users/tarun/.ivy2/cache/commons-codec/commons-codec/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.1.12"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="4.2.5"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="30085" time="0" location="/Users/tarun/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.2"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="4.2.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-cli" name="commons-cli">
+			<revision name="1.1" status="release" pubdate="20070709041349" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jakarta.apache.org/commons/cli/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2770" time="0" location="/Users/tarun/.ivy2/cache/commons-cli/commons-cli/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.1/commons-cli-1.1.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="commons-cli" type="jar" ext="jar" status="no" details="" size="36174" time="0" location="/Users/tarun/.ivy2/cache/commons-cli/commons-cli/jars/commons-cli-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.1/commons-cli-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.ning" name="compress-lzf">
+			<revision name="0.8.4" status="release" pubdate="20110812021839" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/ning/compress" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3569" time="0" location="/Users/tarun/.ivy2/cache/com.ning/compress-lzf/ivy-0.8.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/ning/compress-lzf/0.8.4/compress-lzf-0.8.4.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="0.8.4" rev-constraint-default="0.8.4" rev-constraint-dynamic="0.8.4" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="compress-lzf" type="bundle" ext="jar" status="no" details="" size="25489" time="0" location="/Users/tarun/.ivy2/cache/com.ning/compress-lzf/bundles/compress-lzf-0.8.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/ning/compress-lzf/0.8.4/compress-lzf-0.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.jpountz.lz4" name="lz4">
+			<revision name="1.2.0" status="release" pubdate="20130808173434" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jpountz/lz4-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2738" time="0" location="/Users/tarun/.ivy2/cache/net.jpountz.lz4/lz4/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="lz4" type="jar" ext="jar" status="no" details="" size="165505" time="0" location="/Users/tarun/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial.snappy" name="snappy-java">
+			<revision name="1.0.5" status="release" pubdate="20130517033557" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/xerial/snappy-java/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3994" time="0" location="/Users/tarun/.ivy2/cache/org.xerial.snappy/snappy-java/ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="2.1.12"/>
+				<artifacts>
+					<artifact name="snappy-java" type="bundle" ext="jar" status="no" details="" size="1251514" time="0" location="/Users/tarun/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.0.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.datastax.cassandra" name="cassandra-driver-extras">
+			<revision name="3.1.0" status="release" pubdate="20160727231148" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/datastax/java-driver" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="21">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7803" time="0" location="/Users/tarun/.ivy2/cache/com.datastax.cassandra/cassandra-driver-extras/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-extras/3.1.0/cassandra-driver-extras-3.1.0.pom"/>
+				<caller organisation="default" name="scala-cassandra-connect_2.11" conf="compile, runtime-internal, runtime, optional" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="cassandra-driver-extras" type="bundle" ext="jar" status="no" details="" size="58777" time="0" location="/Users/tarun/.ivy2/cache/com.datastax.cassandra/cassandra-driver-extras/bundles/cassandra-driver-extras-3.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-extras/3.1.0/cassandra-driver-extras-3.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.datastax.cassandra" name="cassandra-driver-mapping">
+			<revision name="3.1.0" status="release" pubdate="20160727231126" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/datastax/java-driver" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6912" time="0" location="/Users/tarun/.ivy2/cache/com.datastax.cassandra/cassandra-driver-mapping/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-mapping/3.1.0/cassandra-driver-mapping-3.1.0.pom"/>
+				<caller organisation="default" name="scala-cassandra-connect_2.11" conf="compile, runtime-internal, runtime, optional" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="cassandra-driver-mapping" type="bundle" ext="jar" status="no" details="" size="87696" time="0" location="/Users/tarun/.ivy2/cache/com.datastax.cassandra/cassandra-driver-mapping/bundles/cassandra-driver-mapping-3.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-mapping/3.1.0/cassandra-driver-mapping-3.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.datastax.cassandra" name="cassandra-driver-core">
+			<revision name="3.1.0" status="release" pubdate="20160727231043" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/datastax/java-driver" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8186" time="0" location="/Users/tarun/.ivy2/cache/com.datastax.cassandra/cassandra-driver-core/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.1.0/cassandra-driver-core-3.1.0.pom"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-mapping" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="3.1.0"/>
+				<caller organisation="default" name="scala-cassandra-connect_2.11" conf="compile, runtime-internal, runtime, optional" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="1.0"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-extras" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="cassandra-driver-core" type="jar" ext="jar" status="no" details="" size="1041820" time="0" location="/Users/tarun/.ivy2/cache/com.datastax.cassandra/cassandra-driver-core/jars/cassandra-driver-core-3.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.1.0/cassandra-driver-core-3.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.jnr" name="jnr-posix">
+			<revision name="3.0.27" status="release" pubdate="20160119180156" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Common Public License - v 1.0" url="http://www-128.ibm.com/developerworks/library/os-cpl.html"/>
+				<license name="GNU General Public License Version 2" url="http://www.gnu.org/copyleft/gpl.html"/>
+				<license name="GNU Lesser General Public License Version 2.1" url="http://www.gnu.org/licenses/lgpl.html"/>
+				<metadata-artifact status="no" details="" size="3747" time="0" location="/Users/tarun/.ivy2/cache/com.github.jnr/jnr-posix/ivy-3.0.27.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/jnr/jnr-posix/3.0.27/jnr-posix-3.0.27.pom"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="3.0.27" rev-constraint-default="3.0.27" rev-constraint-dynamic="3.0.27" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="jnr-posix" type="jar" ext="jar" status="no" details="" size="218609" time="0" location="/Users/tarun/.ivy2/cache/com.github.jnr/jnr-posix/jars/jnr-posix-3.0.27.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/jnr/jnr-posix/3.0.27/jnr-posix-3.0.27.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.jnr" name="jnr-constants">
+			<revision name="0.9.0" status="release" pubdate="20150831154303" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/jnr/jnr-constants" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3164" time="0" location="/Users/tarun/.ivy2/cache/com.github.jnr/jnr-constants/ivy-0.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/jnr/jnr-constants/0.9.0/jnr-constants-0.9.0.pom"/>
+				<caller organisation="com.github.jnr" name="jnr-posix" conf="compile, runtime" rev="0.9.0" rev-constraint-default="0.9.0" rev-constraint-dynamic="0.9.0" callerrev="3.0.27"/>
+				<artifacts>
+					<artifact name="jnr-constants" type="jar" ext="jar" status="no" details="" size="321681" time="0" location="/Users/tarun/.ivy2/cache/com.github.jnr/jnr-constants/jars/jnr-constants-0.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/jnr/jnr-constants/0.9.0/jnr-constants-0.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.jnr" name="jnr-ffi">
+			<revision name="2.0.7" status="release" pubdate="20151112204154" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/jnr/jnr-ffi" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4920" time="0" location="/Users/tarun/.ivy2/cache/com.github.jnr/jnr-ffi/ivy-2.0.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/jnr/jnr-ffi/2.0.7/jnr-ffi-2.0.7.pom"/>
+				<caller organisation="com.github.jnr" name="jnr-posix" conf="compile, runtime" rev="2.0.7" rev-constraint-default="2.0.7" rev-constraint-dynamic="2.0.7" callerrev="3.0.27"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="2.0.7" rev-constraint-default="2.0.7" rev-constraint-dynamic="2.0.7" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="jnr-ffi" type="jar" ext="jar" status="no" details="" size="656047" time="0" location="/Users/tarun/.ivy2/cache/com.github.jnr/jnr-ffi/jars/jnr-ffi-2.0.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/jnr/jnr-ffi/2.0.7/jnr-ffi-2.0.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.jnr" name="jnr-x86asm">
+			<revision name="1.0.2" status="release" pubdate="20120407045021" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/jnr/jnr-x86asm" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3066" time="0" location="/Users/tarun/.ivy2/cache/com.github.jnr/jnr-x86asm/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.pom"/>
+				<caller organisation="com.github.jnr" name="jnr-ffi" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="jnr-x86asm" type="jar" ext="jar" status="no" details="" size="219943" time="0" location="/Users/tarun/.ivy2/cache/com.github.jnr/jnr-x86asm/jars/jnr-x86asm-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-util">
+			<revision name="5.0.3" status="release" pubdate="20140524103053" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<metadata-artifact status="no" details="" size="4408" time="0" location="/Users/tarun/.ivy2/cache/org.ow2.asm/asm-util/ivy-5.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.pom"/>
+				<caller organisation="com.github.jnr" name="jnr-ffi" conf="compile, runtime" rev="5.0.3" rev-constraint-default="5.0.3" rev-constraint-dynamic="5.0.3" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="asm-util" type="jar" ext="jar" status="no" details="" size="43296" time="0" location="/Users/tarun/.ivy2/cache/org.ow2.asm/asm-util/jars/asm-util-5.0.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-analysis">
+			<revision name="5.0.3" status="release" pubdate="20140524103023" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<metadata-artifact status="no" details="" size="4416" time="0" location="/Users/tarun/.ivy2/cache/org.ow2.asm/asm-analysis/ivy-5.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.pom"/>
+				<caller organisation="com.github.jnr" name="jnr-ffi" conf="compile, runtime" rev="5.0.3" rev-constraint-default="5.0.3" rev-constraint-dynamic="5.0.3" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="asm-analysis" type="jar" ext="jar" status="no" details="" size="20443" time="0" location="/Users/tarun/.ivy2/cache/org.ow2.asm/asm-analysis/jars/asm-analysis-5.0.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-commons">
+			<revision name="5.0.3" status="release" pubdate="20140524103033" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<metadata-artifact status="no" details="" size="4414" time="0" location="/Users/tarun/.ivy2/cache/org.ow2.asm/asm-commons/ivy-5.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.pom"/>
+				<caller organisation="com.github.jnr" name="jnr-ffi" conf="compile, runtime" rev="5.0.3" rev-constraint-default="5.0.3" rev-constraint-dynamic="5.0.3" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="asm-commons" type="jar" ext="jar" status="no" details="" size="41717" time="0" location="/Users/tarun/.ivy2/cache/org.ow2.asm/asm-commons/jars/asm-commons-5.0.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-tree">
+			<revision name="5.0.3" status="release" pubdate="20140524103043" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<metadata-artifact status="no" details="" size="4403" time="0" location="/Users/tarun/.ivy2/cache/org.ow2.asm/asm-tree/ivy-5.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.pom"/>
+				<caller organisation="com.github.jnr" name="jnr-ffi" conf="compile, runtime" rev="5.0.3" rev-constraint-default="5.0.3" rev-constraint-dynamic="5.0.3" callerrev="2.0.7"/>
+				<caller organisation="org.ow2.asm" name="asm-analysis" conf="compile, runtime" rev="5.0.3" rev-constraint-default="5.0.3" rev-constraint-dynamic="5.0.3" callerrev="5.0.3"/>
+				<caller organisation="org.ow2.asm" name="asm-util" conf="compile, runtime" rev="5.0.3" rev-constraint-default="5.0.3" rev-constraint-dynamic="5.0.3" callerrev="5.0.3"/>
+				<caller organisation="org.ow2.asm" name="asm-commons" conf="compile, runtime" rev="5.0.3" rev-constraint-default="5.0.3" rev-constraint-dynamic="5.0.3" callerrev="5.0.3"/>
+				<artifacts>
+					<artifact name="asm-tree" type="jar" ext="jar" status="no" details="" size="29036" time="0" location="/Users/tarun/.ivy2/cache/org.ow2.asm/asm-tree/jars/asm-tree-5.0.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm">
+			<revision name="5.0.3" status="release" pubdate="20140524103012" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<metadata-artifact status="no" details="" size="3758" time="0" location="/Users/tarun/.ivy2/cache/org.ow2.asm/asm/ivy-5.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom"/>
+				<caller organisation="com.github.jnr" name="jnr-ffi" conf="compile, runtime" rev="5.0.3" rev-constraint-default="5.0.3" rev-constraint-dynamic="5.0.3" callerrev="2.0.7"/>
+				<caller organisation="org.ow2.asm" name="asm-tree" conf="compile, runtime" rev="5.0.3" rev-constraint-default="5.0.3" rev-constraint-dynamic="5.0.3" callerrev="5.0.3"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="53231" time="0" location="/Users/tarun/.ivy2/cache/org.ow2.asm/asm/jars/asm-5.0.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.jnr" name="jffi">
+			<revision name="1.2.10" status="release" pubdate="20151106201808" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/jnr/jffi" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3493" time="0" location="/Users/tarun/.ivy2/cache/com.github.jnr/jffi/ivy-1.2.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/jnr/jffi/1.2.10/jffi-1.2.10.pom"/>
+				<caller organisation="com.github.jnr" name="jnr-ffi" conf="compile, runtime" rev="1.2.10" rev-constraint-default="1.2.10" rev-constraint-dynamic="1.2.10" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="jffi" type="jar" ext="jar" status="no" details="" size="149044" time="0" location="/Users/tarun/.ivy2/cache/com.github.jnr/jffi/jars/jffi-1.2.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/jnr/jffi/1.2.10/jffi-1.2.10.jar"/>
+					</artifact>
+					<artifact name="jffi" type="jar" ext="jar" extra-classifier="native" status="no" details="" size="456199" time="0" location="/Users/tarun/.ivy2/cache/com.github.jnr/jffi/jars/jffi-1.2.10-native.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/jnr/jffi/1.2.10/jffi-1.2.10-native.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.dropwizard.metrics" name="metrics-core">
+			<revision name="3.1.2" status="release" pubdate="20150426055901" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<metadata-artifact status="no" details="" size="4992" time="0" location="/Users/tarun/.ivy2/cache/io.dropwizard.metrics/metrics-core/ivy-3.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.pom"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="3.1.2" rev-constraint-default="3.1.2" rev-constraint-dynamic="3.1.2" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="metrics-core" type="bundle" ext="jar" status="no" details="" size="112558" time="0" location="/Users/tarun/.ivy2/cache/io.dropwizard.metrics/metrics-core/bundles/metrics-core-3.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.7" status="release" pubdate="20140404131248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<metadata-artifact status="no" details="" size="4573" time="0" location="/Users/tarun/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.1.12"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="3.1.2"/>
+				<caller organisation="org.apache.thrift" name="libthrift" conf="compile, runtime" rev="1.5.8" rev-constraint-default="1.5.8" rev-constraint-dynamic="1.5.8" callerrev="0.9.2"/>
+				<caller organisation="com.yammer.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.2.0"/>
+				<caller organisation="com.addthis.metrics" name="reporter-config" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.1.0"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-thrift" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.1.12"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="1.1.2"/>
+				<caller organisation="com.thinkaurelius.thrift" name="thrift-server" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="0.3.7"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="29257" time="0" location="/Users/tarun/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="1.1.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.6.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="org.apache.thrift" name="libthrift" conf="compile, runtime" rev="1.5.8" rev-constraint-default="1.5.8" rev-constraint-dynamic="1.5.8" callerrev="0.9.2"/>
+				<caller organisation="com.thinkaurelius.thrift" name="thrift-server" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="0.3.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.5.8" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="org.apache.thrift" name="libthrift" conf="compile, runtime" rev="1.5.8" rev-constraint-default="1.5.8" rev-constraint-dynamic="1.5.8" callerrev="0.9.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.1.12"/>
+				<caller organisation="org.apache.thrift" name="libthrift" conf="compile, runtime" rev="1.5.8" rev-constraint-default="1.5.8" rev-constraint-dynamic="1.5.8" callerrev="0.9.2"/>
+				<caller organisation="com.yammer.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.2.0"/>
+				<caller organisation="com.addthis.metrics" name="reporter-config" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.1.0"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-thrift" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.1.12"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="1.1.2"/>
+				<caller organisation="com.thinkaurelius.thrift" name="thrift-server" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="0.3.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="16.0.1" status="release" pubdate="20140203234528" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<metadata-artifact status="no" details="" size="5933" time="0" location="/Users/tarun/.ivy2/cache/com.google.guava/guava/ivy-16.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="16.0" rev-constraint-default="16.0" rev-constraint-dynamic="16.0" callerrev="2.1.12"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-extras" conf="default, compile, runtime, master" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="3.1.0"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2228009" time="0" location="/Users/tarun/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="16.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="16.0.1"/>
+				<caller organisation="org.apache.cassandra" name="cassandra-all" conf="default, compile, runtime, master" rev="16.0" rev-constraint-default="16.0" rev-constraint-dynamic="16.0" callerrev="2.1.12"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-handler">
+			<revision name="4.0.37.Final" status="release" pubdate="20160607201239" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<metadata-artifact status="no" details="" size="17620" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-handler/ivy-4.0.37.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-handler/4.0.37.Final/netty-handler-4.0.37.Final.pom"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="netty-handler" type="jar" ext="jar" status="no" details="" size="275502" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.37.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-handler/4.0.37.Final/netty-handler-4.0.37.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-codec">
+			<revision name="4.0.37.Final" status="release" pubdate="20160607201122" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<metadata-artifact status="no" details="" size="17298" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-codec/ivy-4.0.37.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-codec/4.0.37.Final/netty-codec-4.0.37.Final.pom"/>
+				<caller organisation="io.netty" name="netty-handler" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<artifacts>
+					<artifact name="netty-codec" type="jar" ext="jar" status="no" details="" size="148470" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.37.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-codec/4.0.37.Final/netty-codec-4.0.37.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-transport">
+			<revision name="4.0.37.Final" status="release" pubdate="20160607201047" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<metadata-artifact status="no" details="" size="16625" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-transport/ivy-4.0.37.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-transport/4.0.37.Final/netty-transport-4.0.37.Final.pom"/>
+				<caller organisation="io.netty" name="netty-codec" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<caller organisation="io.netty" name="netty-handler" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<artifacts>
+					<artifact name="netty-transport" type="jar" ext="jar" status="no" details="" size="365994" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.37.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-transport/4.0.37.Final/netty-transport-4.0.37.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-buffer">
+			<revision name="4.0.37.Final" status="release" pubdate="20160607200927" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<metadata-artifact status="no" details="" size="16619" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-buffer/ivy-4.0.37.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-buffer/4.0.37.Final/netty-buffer-4.0.37.Final.pom"/>
+				<caller organisation="io.netty" name="netty-transport" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<caller organisation="io.netty" name="netty-handler" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<artifacts>
+					<artifact name="netty-buffer" type="jar" ext="jar" status="no" details="" size="219107" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.37.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-buffer/4.0.37.Final/netty-buffer-4.0.37.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-common">
+			<revision name="4.0.37.Final" status="release" pubdate="20160607200753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<metadata-artifact status="no" details="" size="15205" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-common/ivy-4.0.37.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-common/4.0.37.Final/netty-common-4.0.37.Final.pom"/>
+				<caller organisation="io.netty" name="netty-buffer" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<artifacts>
+					<artifact name="netty-common" type="jar" ext="jar" status="no" details="" size="472085" time="0" location="/Users/tarun/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.37.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-common/4.0.37.Final/netty-common-4.0.37.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.8" status="release" pubdate="20160304162633" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/tarun/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.pom"/>
+				<caller organisation="default" name="scala-cassandra-connect_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5744974" time="0" location="/Users/tarun/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
