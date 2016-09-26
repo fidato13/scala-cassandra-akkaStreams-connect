@@ -4,7 +4,7 @@ import com.datastax.driver.core.Cluster
 import com.datastax.driver.core.ResultSet
 import com.datastax.driver.core.Row
 import com.datastax.driver.core.Session
-import com.lunatech.example.CassandraCommons._
+import com.lunatech.example.CassandraCommons_poc._
 import scala.collection.JavaConverters._
 
 object Sdriver extends App {
@@ -78,7 +78,7 @@ object Sdriver extends App {
 
     val rs: ResultSet = executeQueryOnSession(schemaQuery)
     val allRow = rs.all().asScala.toList.foreach { row =>
-      printf("%-30s\t%-20s\t%-20s%n",
+      printf("The TTTTTTTTTTTTTTTTTTTTTTT %-30s\t%-20s\t%-20s%n",
         row.getString("title"),
         row.getString("album"),
         row.getString("artist"))
@@ -86,12 +86,12 @@ object Sdriver extends App {
 
   }
 
-  printf("Connected to cluster: %s%n", InitializeCassandra.cluster.getMetadata().getClusterName())
+  printf("Connected to cluster: %s%n", InitializeCassandra_poc.cluster.getMetadata().getClusterName())
 
   //  createSchema
   // loadData
-  // querySchema
+   querySchema
   
-  InitializeCassandra.closeAll
+  InitializeCassandra_poc.closeAll
 
 }

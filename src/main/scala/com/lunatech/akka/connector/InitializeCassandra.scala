@@ -1,4 +1,4 @@
-package com.lunatech.example
+package com.lunatech.akka.connector
 
 import com.datastax.driver.core.Cluster
 import com.datastax.driver.core.ResultSet
