@@ -1,1 +1,13 @@
+# removing target files
+target/
+.settings/
+logs/
+project/project
+project/target
 /bin/
+.cache-main
+.cache-tests
+.classpath
+.settings
+.project
+.worksheet
