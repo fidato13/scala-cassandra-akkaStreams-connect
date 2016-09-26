@@ -1,5 +1,6 @@
 # removing target files
 target/
+.settings/org.eclipse.core.resources.prefs
 .settings/
 logs/
 project/project
