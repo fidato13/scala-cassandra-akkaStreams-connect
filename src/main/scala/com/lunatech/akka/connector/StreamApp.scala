@@ -29,7 +29,7 @@ object StreamApp extends App {
    * query for retrieving the data
    */
 
-  val out = new PrintStream(new FileOutputStream("/trn/eclipse_workspace/scala-cassandra-connect/logs/log1"))
+  val out = new PrintStream(new FileOutputStream("/trn/git_workspace/scala-cassandra-akkaStreams-connect/logs/log1"))
   System.setOut(out)
 
   val schemaQuery = "SELECT * FROM simplex.historical_prices;" //pre-existing data with keyspace as simplex and table name as historical_proces
@@ -54,7 +54,7 @@ object StreamApp extends App {
   // but we can parse the object , do the transformations
   
   
-  val fileSink = FileIO.toFile(new File("/trn/eclipse_workspace/scala-cassandra-connect/target/cassandra-export.txt"))
+  val fileSink = FileIO.toFile(new File("/trn/git_workspace/scala-cassandra-akkaStreams-connect/target/cassandra-export.txt"))
 
   //val sink = Sink.foreach[Rowx] { x => println(s"The row recieved at sink is => $x") }
 

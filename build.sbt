@@ -1,4 +1,4 @@
-name := "scala-cassandra-connect"
+name := "scala-cassandra-akkaStreams-connect"
  
 version := "1.0"
  
