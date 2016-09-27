@@ -24,6 +24,10 @@ import akka.stream.scaladsl.FileIO
 import akka.util.ByteString
 
 object StreamApp extends App {
+  
+  /**
+   * This object connects to cassandra, gets the data and export the data to the file using akka streams.
+   */
 
   /**
    * query for retrieving the data
